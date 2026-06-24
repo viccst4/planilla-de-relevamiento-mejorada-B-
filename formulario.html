@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Relevamiento</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Relevamiento de Hardware</h1>
+
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="index.html">Volver a la Página Principal</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Carga técnica del equipo</h2>
+        <p>
+            Complete los datos solicitados para registrar el estado del equipo y definir posibles acciones de mantenimiento.
+        </p>
+
+        <form action="#" method="POST" class="formulario-relevamiento">
+
+            <div class="campo-form">
+                <label for="tecnico">Nombre del técnico:</label>
+                <input type="text" id="tecnico" name="tecnico" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="fecha">Fecha del relevamiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="sector">Sector / aula / oficina:</label>
+                <input type="text" id="sector" name="sector" placeholder="Ej. Aula 3, Administración, Laboratorio" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="equipo">Identificación del equipo:</label>
+                <input type="text" id="equipo" name="equipo" placeholder="Ej. PC-01" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="marca">Marca y modelo:</label>
+                <input type="text" id="marca" name="marca" placeholder="Ej. Lenovo ThinkCentre, HP ProDesk">
+            </div>
+
+            <div class="campo-form">
+                <label for="categoria">Categoría de hardware:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="critico">Hardware crítico</option>
+                    <option value="complementario">Hardware complementario</option>
+                    <option value="adicional">Hardware adicional</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="procesador">Procesador:</label>
+                <input type="text" id="procesador" name="procesador" placeholder="Ej. Intel Core i5">
+            </div>
+
+            <div class="campo-form">
+                <label for="ram">Memoria RAM:</label>
+                <input type="text" id="ram" name="ram" placeholder="Ej. 8 GB">
+            </div>
+
+            <div class="campo-form">
+                <label for="almacenamiento">Almacenamiento:</label>
+                <input type="text" id="almacenamiento" name="almacenamiento" placeholder="Ej. SSD 240 GB / HDD 1 TB">
+            </div>
+
+            <div class="campo-form">
+                <label for="sistema">Sistema operativo:</label>
+                <input type="text" id="sistema" name="sistema" placeholder="Ej. Windows 10, Windows 11, Linux">
+            </div>
+
+            <div class="campo-form">
+                <label for="perifericos">Periféricos asociados:</label>
+                <textarea id="perifericos" name="perifericos" rows="3" placeholder="Ej. Monitor, teclado, mouse, impresora, parlantes..."></textarea>
+            </div>
+
+            <div class="campo-form">
+                <label for="estado">Estado general del equipo:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="bueno">Bueno</option>
+                    <option value="regular">Regular</option>
+                    <option value="malo">Malo</option>
+                    <option value="fuera_servicio">Fuera de servicio</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="problemas">Problemas detectados:</label>
+                <textarea id="problemas" name="problemas" rows="4" placeholder="Ej. Lentitud, sobrecalentamiento, ruido, fallas de encendido, pantalla dañada..."></textarea>
+            </div>
+
+            <div class="campo-form">
+                <label for="mantenimiento">¿Requiere mantenimiento?</label>
+                <select id="mantenimiento" name="mantenimiento" required>
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                    <option value="urgente">Sí, urgente</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="accion">Acción recomendada:</label>
+                <select id="accion" name="accion">
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="limpieza">Limpieza interna o externa</option>
+                    <option value="actualizacion">Actualización de componentes</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="reemplazo">Reemplazo del equipo</option>
+                    <option value="sin_accion">Sin acción necesaria</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="observaciones">Observaciones finales:</label>
+                <textarea id="observaciones" name="observaciones" rows="5" placeholder="Agregue cualquier dato importante que no haya sido registrado anteriormente..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Relevamiento</button>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Formulario de Auditoría de Sistemas</p>
+</footer>
+
+</body>
+</html>
